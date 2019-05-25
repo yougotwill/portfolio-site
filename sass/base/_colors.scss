@@ -1,0 +1,31 @@
+@import '../components/_theme-switch';
+
+$background-color--light: #e5e5e5;
+$foreground-color--light: #f7f7f7;
+$nav-color--light: #d3d3d3;
+$text-color--light: #49555F;
+
+$background-color--dark: #3F3F3F;
+$foreground-color--dark: #232323;
+$nav-color--dark: #1E1E1E;
+$text-color--dark: #D3D9DD;
+
+$background-color: $background-color--light;
+$foreground-color: $foreground-color--light;
+$nav-color: $nav-color--light;
+$text-color: $text-color--light;
+
+// blue
+$primary-color: #577EB5;
+$secondary-color: #90A2D4;
+
+// green
+// $primary-color: #00d68b;
+// $secondary-color: #009a68;
+
+// links
+$tertiary-color: #fd2965;
+$quaternary-color: #ed0244;
+
+// components
+$button-color: none;

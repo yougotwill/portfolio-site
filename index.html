@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="js/theme-switch.js"></script>
+</head>
+<body class="dark-theme">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="music.html">Music</a>
+
+    <div class="theme-switch" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
+      <img src="assets/images/theme-light.svg" class="light">
+      <img src="assets/images/theme-dark.svg" class="dark">
+    </div>
+  </nav>
+  <div class="content">
+    <img src="assets/images/avatar.jpg" alt="profile picture" class="image avatar round">
+    <h1>William Grant</h1>
+    <p><i>"Without music, life would be a mistake." - Friedrich Nietzsche</i></p>
+
+    <table class="bio-table">
+    <tr>
+      <td class="subtitle left">Programmer 👨‍💻</td>
+      <td class="subtitle right">Teacher 👨‍🏫</td>
+    </tr>
+    <tr>
+      <td class="subtitle left">South African 🇿🇦</td>
+      <td class="subtitle right">Living in Japan 🇯🇵</td>
+    </tr>
+    </table>
+  </div>
+
+  <footer>
+    <span>Built with ☕️ and ❤️</span>
+    <div>
+      <!-- <a href="#" target="_blank"><img src="assets/images/cv.svg" alt="CV"></a> -->
+      <a href="mailto:yougotwill94@gmail.com" target="_blank"><img src="assets/images/email.svg" alt="Email"></a>
+      <a href="https://instagram.com/yougotwill" target="_blank"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+      <a href="https://github.com/yougotwill" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/yougotwill/" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
+</html>

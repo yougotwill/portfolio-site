@@ -1,0 +1,183 @@
+// base
+@import '_reset';
+@import '_colors';
+
+// components
+@import '../components/_button';
+@import '../components/_image';
+@import '../components/_project-card';
+@import '../components/_tooltip';
+@import '../components/_footer';
+
+// mixins
+@import '../mixins/_grow';
+
+// antialias
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background: $background-color;
+  color: $text-color;
+  text-align: center;
+  overscroll-behavior: none;
+}
+
+nav {
+  background: $nav-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  z-index: 2;
+  a {
+    @extend .button;
+    font-weight: bold;
+    padding-left: .25em;
+    padding-right: .25em;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Arial;
+  color: $primary-color;
+  &.heading{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &:hover{
+      @include grow;
+      color: $secondary-color;
+    }
+    &.celebrate {
+      &:hover{
+        &::before {
+          content: '🎉 ';
+        }
+        &::after {
+          content: ' 🎉';
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: $tertiary-color;
+  text-decoration: none;
+  &:hover {
+    color: $quaternary-color;
+  }
+}
+
+img {}
+
+p {
+  a {
+    font-style: italic;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 1.5em 0;
+  position: relative;
+  .back-to-top {
+    padding-left: calc(50% - (50px / 2) + 5px);
+    padding-right: calc(50% - (50px / 2) + 5px);
+    img {
+      width: 50px;
+      height: 50px;
+      position: relative;
+    }
+  }
+}
+
+.bio-table{
+  padding-top: .5em;
+  margin: 0 auto;
+  .subtitle {
+    font-size: 20px;
+    padding-bottom: 1em;
+    text-align: left;
+  }
+  .left {
+    padding-right: 1.5em;
+  }
+  .right {
+    padding-left: 1.5em;
+  }
+  &.about {
+    .special {
+      margin-top: 1em;
+      margin-bottom: .25em;
+    }
+    .special + p {
+      margin: 0;
+    }
+    .left {
+      padding-right: 2em;
+      padding-top: 0;
+    }
+    .right {
+      padding-left: 2em;
+      padding-top: 2em;
+      text-align: left;
+    }
+    tr {
+      vertical-align: top;
+    }
+    ul {
+      padding-left: 1.25em;
+    }
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 33.33%;
+  left: 0;
+  right: 0;
+  font-size: 4em;
+}
+
+.special {
+  color: $tertiary-color;
+}
+
+.spotify-grid {
+  background: $background-color;
+  .playlist {
+    position: fixed;
+    top: 2em;
+    height: calc(100% - 3.5em);
+    width: 25%;
+    &.zero {
+      left: 0;
+    }
+    &.one {
+      left: 25%;
+    }
+    &.two {
+      left: 50%;
+    }
+    &.three {
+      left: 75%;
+    }
+    &.four {
+      left: 100%;
+    }
+  }
+}
+
+body.dark-theme {
+  background: $background-color--dark;
+  color: $text-color--dark;
+  nav {
+    background: $nav-color--dark;
+  }
+}

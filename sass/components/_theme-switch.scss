@@ -1,0 +1,31 @@
+.theme-switch {
+  text-align: right;
+  .dark {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+  .light {
+    display: none;
+    width: 24px;
+    height: 24px;
+    svg {
+      fill: white;
+    }
+  }
+  img {
+    position: absolute;
+    top: 3px;
+    right: .5em;
+  }
+}
+
+body.dark-theme {
+  .light {
+    display: block;
+  }
+  .dark {
+    display: none;
+  }
+}

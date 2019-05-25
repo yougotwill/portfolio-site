@@ -1,0 +1,45 @@
+@import '../mixins/_grow';
+
+.project-card {
+  @include grow(1.1);
+  background: $foreground-color;
+  width: 520px;
+  height: 200px;
+  margin: 0 auto 2.5em;
+  padding-bottom: 2em;
+  border-radius: 6px;
+  text-align: left;
+  position: relative;
+  h2 {
+    font-size: 30px;
+    margin-bottom: .25em;
+  }
+  img {
+    width: 100%;
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .avatar {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 1.5em;
+    &.screenshot {
+      top:  4.15em;
+    }
+  }
+  .details {
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+body.dark-theme {
+  .project-card {
+    background: $foreground-color--dark;
+  }
+}

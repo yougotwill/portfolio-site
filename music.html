@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music</title>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="js/theme-switch.js"></script>
+</head>
+<body class="dark-theme">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="music.html">Music</a>
+
+    <div class="theme-switch" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
+      <img src="assets/images/theme-light.svg" class="light">
+      <img src="assets/images/theme-dark.svg" class="dark">
+    </div>
+  </nav>
+
+  <h1 class="loading special">Loading...</h1>
+
+  <div class="spotify-grid">
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/57IqIwwb4roJMJ9UEsEXRo" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist zero"></iframe>
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/09Vnzg0luvQfRTuuLt9DQI" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist one"></iframe>
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/6wSP8nuYAmSqvmIgoSv3oI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist two"></iframe>
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/3EYHbdmiSSYGJeH5wpFOvQ" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist three"></iframe>
+  </div>
+
+  <footer>
+    <span>Built with ☕️ and ❤️</span>
+    <div>
+      <!-- <a href="#" target="_blank"><img src="assets/images/cv.svg" alt="CV"></a> -->
+      <a href="mailto:yougotwill94@gmail.com" target="_blank"><img src="assets/images/email.svg" alt="Email"></a>
+      <a href="https://instagram.com/yougotwill" target="_blank"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+      <a href="https://github.com/yougotwill" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/yougotwill/" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
+</html>

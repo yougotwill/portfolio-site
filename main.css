@@ -1,0 +1,220 @@
+@charset "UTF-8";
+html, body, nav, ul, ol { margin: 0; padding: 0; }
+
+.theme-switch { text-align: right; }
+
+.theme-switch .dark { display: block; width: 20px; height: 20px; margin-top: 3px; }
+
+.theme-switch .light { display: none; width: 24px; height: 24px; }
+
+.theme-switch .light svg { fill: white; }
+
+.theme-switch img { position: absolute; top: 3px; right: .5em; }
+
+body.dark-theme .light { display: block; }
+
+body.dark-theme .dark { display: none; }
+
+.theme-switch { text-align: right; }
+
+.theme-switch .dark { display: block; width: 20px; height: 20px; margin-top: 3px; }
+
+.theme-switch .light { display: none; width: 24px; height: 24px; }
+
+.theme-switch .light svg { fill: white; }
+
+.theme-switch img { position: absolute; top: 3px; right: .5em; }
+
+body.dark-theme .light { display: block; }
+
+body.dark-theme .dark { display: none; }
+
+.button, footer a, nav a { color: #577EB5; background: none; text-decoration: none; }
+
+.button:hover, footer a:hover, nav a:hover { transition: transform .4s ease-in-out; color: #90A2D4; }
+
+.button:hover:hover, footer a:hover:hover, nav a:hover:hover { transform: scale(1.2); }
+
+.theme-switch { text-align: right; }
+
+.theme-switch .dark { display: block; width: 20px; height: 20px; margin-top: 3px; }
+
+.theme-switch .light { display: none; width: 24px; height: 24px; }
+
+.theme-switch .light svg { fill: white; }
+
+.theme-switch img { position: absolute; top: 3px; right: .5em; }
+
+body.dark-theme .light { display: block; }
+
+body.dark-theme .dark { display: none; }
+
+.image { background: #f7f7f7; border-radius: 6px; }
+
+.image.avatar { max-width: 250px; max-height: 250px; border: 3px solid #d3d3d3; margin-top: 3em; }
+
+.image.avatar.round { max-width: 150px; max-height: 150px; border-radius: 50%; }
+
+body.dark-theme .image { background: #232323; }
+
+body.dark-theme .image.avatar { border: 3px solid #1E1E1E; }
+
+.project-card { transition: transform .4s ease-in-out; background: #f7f7f7; width: 520px; height: 200px; margin: 0 auto 2.5em; padding-bottom: 2em; border-radius: 6px; text-align: left; position: relative; }
+
+.project-card:hover { transform: scale(1.1); }
+
+.project-card h2 { font-size: 30px; margin-bottom: .25em; }
+
+.project-card img { width: 100%; width: 100%; max-width: 150px; max-height: 150px; }
+
+.project-card .avatar { display: inline-block; width: 200px; text-align: center; position: relative; top: 1.5em; }
+
+.project-card .avatar.screenshot { top: 4.15em; }
+
+.project-card .details { display: inline-block; width: 300px; position: absolute; top: 0; }
+
+body.dark-theme .project-card { background: #232323; }
+
+.tooltip { position: relative; }
+
+.tooltip .tooltip-contents { white-space: nowrap; text-align: center; padding: 5px 0; border-radius: 6px; color: #fd2965; position: absolute; z-index: 1; bottom: 200%; left: 20%; }
+
+.tooltip .tooltip-contents::after { content: ''; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #fd2965 transparent transparent transparent; }
+
+.tooltip .bounce { animation: bounce 2s infinite; }
+
+@keyframes bounce { 0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); } }
+
+.theme-switch { text-align: right; }
+
+.theme-switch .dark { display: block; width: 20px; height: 20px; margin-top: 3px; }
+
+.theme-switch .light { display: none; width: 24px; height: 24px; }
+
+.theme-switch .light svg { fill: white; }
+
+.theme-switch img { position: absolute; top: 3px; right: .5em; }
+
+body.dark-theme .light { display: block; }
+
+body.dark-theme .dark { display: none; }
+
+.theme-switch { text-align: right; }
+
+.theme-switch .dark { display: block; width: 20px; height: 20px; margin-top: 3px; }
+
+.theme-switch .light { display: none; width: 24px; height: 24px; }
+
+.theme-switch .light svg { fill: white; }
+
+.theme-switch img { position: absolute; top: 3px; right: .5em; }
+
+body.dark-theme .light { display: block; }
+
+body.dark-theme .dark { display: none; }
+
+.button, footer a, nav a { color: #577EB5; background: none; text-decoration: none; }
+
+.button:hover, footer a:hover, nav a:hover { transition: transform .4s ease-in-out; color: #90A2D4; }
+
+.button:hover:hover, footer a:hover:hover, nav a:hover:hover { transform: scale(1.2); }
+
+.tooltip { position: relative; }
+
+.tooltip .tooltip-contents { white-space: nowrap; text-align: center; padding: 5px 0; border-radius: 6px; color: #fd2965; position: absolute; z-index: 1; bottom: 200%; left: 20%; }
+
+.tooltip .tooltip-contents::after { content: ''; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #fd2965 transparent transparent transparent; }
+
+.tooltip .bounce { animation: bounce 2s infinite; }
+
+@keyframes bounce { 0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); } }
+
+footer { background: #d3d3d3; position: fixed; bottom: 0; left: 0; right: 0; padding: 0; z-index: 2; }
+
+footer a { padding-left: .25em; padding-right: .25em; }
+
+footer a img { width: 18px; height: 18px; background-color: transparent; padding: 0 .5em; padding-top: .35em; padding-bottom: .05em; }
+
+footer a img:hover { padding-top: .1em; padding-bottom: .25em; }
+
+footer div { float: right; }
+
+footer span { font-weight: 700; float: left; padding-left: .5em; }
+
+body.dark-theme footer { background: #1E1E1E; }
+
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body { font-family: Verdana, Geneva, sans-serif; background: #e5e5e5; color: #49555F; text-align: center; overscroll-behavior: none; }
+
+nav { background: #d3d3d3; position: fixed; top: 0; left: 0; right: 0; padding-top: .35em; padding-bottom: .35em; z-index: 2; }
+
+nav a { font-weight: bold; padding-left: .25em; padding-right: .25em; }
+
+h1, h2, h3, h4, h5, h6 { font-family: Arial; color: #577EB5; }
+
+h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading { margin-top: 1em; margin-bottom: 1em; }
+
+h1.heading:hover, h2.heading:hover, h3.heading:hover, h4.heading:hover, h5.heading:hover, h6.heading:hover { transition: transform .4s ease-in-out; color: #90A2D4; }
+
+h1.heading:hover:hover, h2.heading:hover:hover, h3.heading:hover:hover, h4.heading:hover:hover, h5.heading:hover:hover, h6.heading:hover:hover { transform: scale(1.2); }
+
+h1.heading.celebrate:hover::before, h2.heading.celebrate:hover::before, h3.heading.celebrate:hover::before, h4.heading.celebrate:hover::before, h5.heading.celebrate:hover::before, h6.heading.celebrate:hover::before { content: '🎉 '; }
+
+h1.heading.celebrate:hover::after, h2.heading.celebrate:hover::after, h3.heading.celebrate:hover::after, h4.heading.celebrate:hover::after, h5.heading.celebrate:hover::after, h6.heading.celebrate:hover::after { content: ' 🎉'; }
+
+a { color: #fd2965; text-decoration: none; }
+
+a:hover { color: #ed0244; }
+
+p a { font-style: italic; }
+
+.content { margin: 0 auto; max-width: 700px; padding: 1.5em 0; position: relative; }
+
+.content .back-to-top { padding-left: calc(50% - (50px / 2) + 5px); padding-right: calc(50% - (50px / 2) + 5px); }
+
+.content .back-to-top img { width: 50px; height: 50px; position: relative; }
+
+.bio-table { padding-top: .5em; margin: 0 auto; }
+
+.bio-table .subtitle { font-size: 20px; padding-bottom: 1em; text-align: left; }
+
+.bio-table .left { padding-right: 1.5em; }
+
+.bio-table .right { padding-left: 1.5em; }
+
+.bio-table.about .special { margin-top: 1em; margin-bottom: .25em; }
+
+.bio-table.about .special + p { margin: 0; }
+
+.bio-table.about .left { padding-right: 2em; padding-top: 0; }
+
+.bio-table.about .right { padding-left: 2em; padding-top: 2em; text-align: left; }
+
+.bio-table.about tr { vertical-align: top; }
+
+.bio-table.about ul { padding-left: 1.25em; }
+
+.loading { position: absolute; top: 33.33%; left: 0; right: 0; font-size: 4em; }
+
+.special { color: #fd2965; }
+
+.spotify-grid { background: #e5e5e5; }
+
+.spotify-grid .playlist { position: fixed; top: 2em; height: calc(100% - 3.5em); width: 25%; }
+
+.spotify-grid .playlist.zero { left: 0; }
+
+.spotify-grid .playlist.one { left: 25%; }
+
+.spotify-grid .playlist.two { left: 50%; }
+
+.spotify-grid .playlist.three { left: 75%; }
+
+.spotify-grid .playlist.four { left: 100%; }
+
+body.dark-theme { background: #3F3F3F; color: #D3D9DD; }
+
+body.dark-theme nav { background: #1E1E1E; }

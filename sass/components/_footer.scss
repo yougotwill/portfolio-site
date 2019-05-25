@@ -1,0 +1,44 @@
+@import '../base/_colors';
+@import '../components/_button';
+@import '../components/_tooltip';
+
+footer {
+  background: $nav-color;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  z-index: 2;
+  a {
+    @extend .button;
+    padding-left: .25em;
+    padding-right: .25em;
+    img {
+      width: 18px;
+      height: 18px;
+      background-color: transparent;
+      padding: 0 .5em;
+      padding-top: .35em;
+      padding-bottom: .05em;
+      &:hover {
+        padding-top: .1em;
+        padding-bottom: .25em;
+      }
+    }
+  }
+  div {
+    float: right;
+  }
+  span {
+    font-weight: 700;
+    float: left;
+    padding-left: .5em;
+  }
+}
+
+body.dark-theme {
+  footer {
+    background: $nav-color--dark;
+  }
+}
