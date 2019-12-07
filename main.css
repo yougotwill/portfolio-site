@@ -131,17 +131,19 @@ body.dark-theme .dark { display: none; }
 @keyframes bounce { 0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); } }
 
-footer { background: #d3d3d3; position: fixed; bottom: 0; left: 0; right: 0; padding: 0; z-index: 2; }
+footer { background: #d3d3d3; position: fixed; bottom: 0; left: 0; right: 0; padding: 0; z-index: 2; max-height: 32px; display: flex; justify-content: space-between; align-items: center; }
 
 footer a { padding-left: .25em; padding-right: .25em; }
 
-footer a img { width: 18px; height: 18px; background-color: transparent; padding: 0 .5em; padding-top: .35em; padding-bottom: .05em; }
+footer a img { width: 18px; height: 18px; background-color: transparent; }
 
-footer a img:hover { padding-top: .1em; padding-bottom: .25em; }
+footer span { font-weight: 700; padding-left: .5em; }
 
-footer div { float: right; }
+footer .banner img { padding-left: 0.5em; vertical-align: bottom; }
 
-footer span { font-weight: 700; float: left; padding-left: .5em; }
+footer .icon { padding: 0 .5em; padding-top: .35em; padding-bottom: .05em; }
+
+footer .icon:hover { padding-top: .1em; padding-bottom: .25em; }
 
 body.dark-theme footer { background: #1E1E1E; }
 
@@ -161,15 +163,15 @@ h1.heading:hover, h2.heading:hover, h3.heading:hover, h4.heading:hover, h5.headi
 
 h1.heading:hover:hover, h2.heading:hover:hover, h3.heading:hover:hover, h4.heading:hover:hover, h5.heading:hover:hover, h6.heading:hover:hover { transform: scale(1.2); }
 
-h1.heading.celebrate:hover::before, h2.heading.celebrate:hover::before, h3.heading.celebrate:hover::before, h4.heading.celebrate:hover::before, h5.heading.celebrate:hover::before, h6.heading.celebrate:hover::before { content: '🎉 '; }
-
-h1.heading.celebrate:hover::after, h2.heading.celebrate:hover::after, h3.heading.celebrate:hover::after, h4.heading.celebrate:hover::after, h5.heading.celebrate:hover::after, h6.heading.celebrate:hover::after { content: ' 🎉'; }
-
 a { color: #fd2965; text-decoration: none; }
 
 a:hover { color: #ed0244; }
 
 p a { font-style: italic; }
+
+.celebrate:hover::before { content: '🎉 '; }
+
+.celebrate:hover::after { content: ' 🎉'; }
 
 .content { margin: 0 auto; max-width: 700px; padding: 1.5em 0; position: relative; }
 

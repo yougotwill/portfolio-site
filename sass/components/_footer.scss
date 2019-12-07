@@ -10,6 +10,10 @@ footer {
   right: 0;
   padding: 0;
   z-index: 2;
+  max-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   a {
     @extend .button;
     padding-left: .25em;
@@ -18,22 +22,26 @@ footer {
       width: 18px;
       height: 18px;
       background-color: transparent;
-      padding: 0 .5em;
-      padding-top: .35em;
-      padding-bottom: .05em;
-      &:hover {
-        padding-top: .1em;
-        padding-bottom: .25em;
-      }
     }
-  }
-  div {
-    float: right;
   }
   span {
     font-weight: 700;
-    float: left;
     padding-left: .5em;
+  }
+  .banner {
+    img {
+      padding-left: 0.5em;
+      vertical-align: bottom;
+    }
+  }
+  .icon {
+    padding: 0 .5em;
+    padding-top: .35em;
+    padding-bottom: .05em;
+    &:hover {
+      padding-top: .1em;
+      padding-bottom: .25em;
+    }
   }
 }
 

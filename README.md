@@ -22,15 +22,14 @@ The [main.css](main.css) is formatted to be easy to read and not necessarily eas
 2. Edit the HTML files with your information.
 3. Tweak the website's themes as you see fit in either [main.css](main.css) or in [sass](sass).
   1. SASS Route I recommend that you download [Scout-App](https://scout-app.io) to compile the SASS to CSS. It's super easy to use and you don't need to fiddle with the command line.
-  2. For the SASS complication process your source is [sass](sass) and the output is the base directory. 
+  2. For the SASS complication process your source is [sass](sass) and the output is the base directory.
   3. It should compile and overwrite [main.css](main.css).
 4. Open [index.html](index.html) in your browser and see what you think.
 
 
 ## TODO
-- [ ] Update CV and add to footer
-- [ ] Update bio
 - [ ] Make responsive for mobile and tablet
+- [ ] Refactor Stylesheet
 
 
 ## Things that helped and inspired me
@@ -50,4 +49,4 @@ Dark and light mode toggle
 
 - The most simple way to toggle a light and dark theme when using SASS on a static website. Trust me I spent hours looking into this…
 - https://flaviocopes.com/dark-mode/
-- **NB** When working on this locally the theme switch won't work in safari. This has something to do with safari thinking the javascript is unsecure since it is being run from a local directory. Everything is fine once you host it online. 
+- **NB** When working on this locally the theme switch won't work in safari. This has something to do with safari thinking the javascript is unsecure since it is being run from a local directory. Everything is fine once you host it online.

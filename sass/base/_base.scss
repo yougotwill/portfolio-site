@@ -52,16 +52,6 @@ h1,h2,h3,h4,h5,h6 {
       @include grow;
       color: $secondary-color;
     }
-    &.celebrate {
-      &:hover{
-        &::before {
-          content: '🎉 ';
-        }
-        &::after {
-          content: ' 🎉';
-        }
-      }
-    }
   }
 }
 
@@ -78,6 +68,17 @@ img {}
 p {
   a {
     font-style: italic;
+  }
+}
+
+.celebrate {
+  &:hover{
+    &::before {
+      content: '🎉 ';
+    }
+    &::after {
+      content: ' 🎉';
+    }
   }
 }
 
