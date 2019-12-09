@@ -1,0 +1,52 @@
+.about-box {
+  margin: 0 auto;
+  .left, .right {
+    margin-top: 3em;
+  }
+  .avatar {
+    margin-top: 0;
+  }
+  .info {
+    .special {
+      margin-top: 1em;
+      margin-bottom: .25em;
+    }
+    .special + p {
+      margin: 0;
+    }
+  }
+  .biography {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+  }
+  @include screen($tablet) {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    .left {
+      flex: 1;
+      padding-top: 1em;
+      padding-right: 2em;
+    }
+    .right {
+      flex: 1;
+      padding-left: 2em;
+      h2 {
+        display: none;
+      }
+    }
+    .biography {
+      padding: 0;
+      text-align: left;
+    }
+  }
+  @include screen($laptop) {
+    max-width: 700px;
+    .right {
+      flex: 2;
+    }
+  }
+}

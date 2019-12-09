@@ -1,0 +1,33 @@
+.frame-carousel {
+  display: flex;
+  height: calc(100vh - 3.5em);
+  overflow-x: scroll;
+  margin-top: 2em;
+  .card {
+    height: calc(100vh - 64px);
+    width: 100%;
+    @include screen($laptop) {
+      position: fixed;
+      top: 2em;
+      height: calc(100% - 3.5em);
+      width: 25%;
+      left: unset;
+      overflow-x: unset;
+      &.zero {
+        left: 0;
+      }
+      &.one {
+        left: 25%;
+      }
+      &.two {
+        left: 50%;
+      }
+      &.three {
+        left: 75%;
+      }
+      &.four {
+        left: 100%;
+      }
+    }
+  }
+}

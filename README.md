@@ -28,7 +28,6 @@ The [main.css](main.css) is formatted to be easy to read and not necessarily eas
 
 
 ## TODO
-- [ ] Make responsive for mobile and tablet
 - [ ] Refactor Stylesheet
 
 

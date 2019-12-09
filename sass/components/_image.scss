@@ -4,23 +4,28 @@
 .image{
   background: $foreground-color;
   border-radius: 6px;
-  &.avatar{
+  max-width: 150px;
+  max-height: 150px;
+  &.border {
+    border: 3px solid $nav-color;
+  }
+  &.round {
+    border-radius: 50%;
+  }
+  @include screen($tablet) {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  @include screen($laptop) {
     max-width: 250px;
     max-height: 250px;
-    border: 3px solid $nav-color;
-    margin-top: 3em;
-    &.round {
-      max-width: 150px;
-      max-height: 150px;
-      border-radius: 50%;
-    }
   }
 }
 
 body.dark-theme {
   .image {
     background: $foreground-color--dark;
-    &.avatar {
+    &.border {
       border: 3px solid $nav-color--dark;
     }
   }

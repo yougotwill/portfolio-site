@@ -1,40 +1,61 @@
 @import '../mixins/_grow';
 
 .project-card {
-  @include grow(1.1);
   background: $foreground-color;
-  width: 520px;
-  height: 200px;
-  margin: 0 auto 2.5em;
+  width: 275px;
+  height: 210px;
+  margin: 0 1em 2.5em;
   padding-bottom: 2em;
   border-radius: 6px;
-  text-align: left;
+  text-align: center;
   position: relative;
   h2 {
-    font-size: 30px;
     margin-bottom: .25em;
   }
   img {
     width: 100%;
     width: 100%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 75px;
+    max-height: 75px;
   }
   .avatar {
     display: inline-block;
-    width: 200px;
+    width: 75px;
     text-align: center;
     position: relative;
-    top: 1.5em;
-    &.screenshot {
-      top:  4.15em;
-    }
+    top: .75em;
   }
   .details {
     display: inline-block;
-    width: 300px;
-    position: absolute;
-    top: 0;
+    width: 250px;
+    font-size: 0.8em;
+  }
+  @include screen($tablet) {
+    @include grow(1.1);
+    width: 520px;
+    height: 200px;
+    margin: 0 auto 2.5em;
+    text-align: left;
+    h2 {
+      font-size: 30px;
+    }
+    img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+    .avatar {
+      width: 200px;
+      top: 1.5em;
+      &.screenshot {
+        top:  4.15em;
+      }
+    }
+    .details {
+      width: 300px;
+      font-size: 1em;
+      position: absolute;
+      top: 0;
+    }
   }
 }
 

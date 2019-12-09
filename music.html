@@ -3,17 +3,25 @@
 <head>
   <title>Music</title>
   <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="js/theme-switch.js"></script>
+  <script type="text/javascript" src="js/nav-toggle.js"></script>
+  <script type="text/javascript" src="js/theme-toggle.js"></script>
 </head>
 <body class="dark-theme">
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="music.html">Music</a>
+    <div id="js-nav-btn" class="logo">
+      <img src="assets/images/hamburger-light.svg" class="light">
+      <img src="assets/images/hamburger-dark.svg" class="dark">
+    </div>
+    <ul id="js-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="music.html">Music</a></li>
+    </ul>
 
-    <div class="theme-switch" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
+    <div class="theme-toggle" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
       <img src="assets/images/theme-light.svg" class="light">
       <img src="assets/images/theme-dark.svg" class="dark">
     </div>
@@ -21,15 +29,15 @@
 
   <h1 class="loading special">Loading...</h1>
 
-  <div class="spotify-grid">
-    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/57IqIwwb4roJMJ9UEsEXRo" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist zero"></iframe>
-    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/09Vnzg0luvQfRTuuLt9DQI" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist one"></iframe>
-    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/6wSP8nuYAmSqvmIgoSv3oI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist two"></iframe>
-    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/3EYHbdmiSSYGJeH5wpFOvQ" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist three"></iframe>
+  <div class="frame-carousel">
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/57IqIwwb4roJMJ9UEsEXRo" frameborder="0" allowtransparency="true" allow="encrypted-media" class="card zero"></iframe>
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/09Vnzg0luvQfRTuuLt9DQI" frameborder="0" allowtransparency="true" allow="encrypted-media" class="card one"></iframe>
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/6wSP8nuYAmSqvmIgoSv3oI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="card two"></iframe>
+    <iframe src="https://open.spotify.com/embed/user/yougotwill/playlist/3EYHbdmiSSYGJeH5wpFOvQ" frameborder="0" allowtransparency="true" allow="encrypted-media" class="card three"></iframe>
   </div>
 
   <footer>
-    <span>Built with ☕️ and ❤️</span>
+    <span class="built-with">Built with ☕️ and ❤️</span>
     <span class="banner">Project of the Day: <a href="https://yougotwill.github.io/todo-box" target="_blank">Todo Box<img src="https://raw.githubusercontent.com/yougotwill/todo-box/master/src/resources/todobox.png"></a></span>
     <div>
       <!-- <a href="#" target="_blank"><img src="assets/images/cv.svg" class="icon" alt="CV"></a> -->

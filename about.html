@@ -3,52 +3,61 @@
 <head>
   <title>About</title>
   <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="js/theme-switch.js"></script>
+  <script type="text/javascript" src="js/nav-toggle.js"></script>
+  <script type="text/javascript" src="js/theme-toggle.js"></script>
 </head>
 <body class="dark-theme">
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="music.html">Music</a>
+    <div id="js-nav-btn" class="logo">
+      <img src="assets/images/hamburger-light.svg" class="light">
+      <img src="assets/images/hamburger-dark.svg" class="dark">
+    </div>
+    <ul id="js-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="music.html">Music</a></li>
+    </ul>
 
-    <div class="theme-switch" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
+    <div class="theme-toggle" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
       <img src="assets/images/theme-light.svg" class="light">
       <img src="assets/images/theme-dark.svg" class="dark">
     </div>
   </nav>
   <div id='about-top' class="content">
-    <table class="bio-table about">
-    <tr>
-      <td class="left">
-        <img src="assets/images/avatar.jpg" alt="profile picture" class="image avatar">
-        <h1>William Grant</h1>
-        <p class="special">Current Location:</p>
-        <p>Nishiwaki City, Hyogo, Japan</p>
-        <p class="special">Likes:</p>
-        <p>music, ramen, reading, travel</p>
-        <p class="special">Dislikes:</p>
-        <p>chilli</p>
+    <div class="about-box">
+      <div class="left">
+        <img src="assets/images/avatar.jpg" alt="profile picture" class="image border avatar">
+        <div class="info">
+          <h1>William Grant</h1>
+          <p class="special">Current Location:</p>
+          <p>Nishiwaki City, Hyogo, Japan</p>
+          <p class="special">Likes:</p>
+          <p>music, ramen, reading, travel</p>
+          <p class="special">Dislikes:</p>
+          <p>chilli</p>
+        </div>
+      </div>
+      <div class="right">
+        <h2>About Me</h2>
+        <div class="biography">
+          <p>Technology has been a large part of my life from a young age. Over the years I have enjoyed engaging in various projects related to internet security, artificial intelligence, web/app/mobile development, and finally video game design.</p>
 
-<!--         <p class="special"><i>You can find more detailed information about me by downloading my CV.</i></p> -->
-      </td>
-      <td class="right">
-        <p>Technology has been a large part of my life from a young age. Over the years I have enjoyed engaging in various projects related to internet security, artificial intelligence, web/app/mobile development, and finally video game design.</p>
+          <p>Having recently moved to Japan when I'm not coding I am working on my Japanese which has been a fun and engaging experience. Currently I am an English Teacher which has been an incredible opportunity to further improve myself and gain new skills.</p>
 
-        <p>Having recently moved to Japan when I'm not coding I am working on my Japanese which has been a fun and engaging experience. Currently I am an English Teacher which has been an incredible opportunity to further improve myself and gain new skills.</p>
+          <p>Want to know more? Feel free to email me.</p>
 
-        <p>Want to know more? Feel free to email me.</p>
-
-        <a href="mailto:yougotwill94@gmail.com" target="_blank">yougotwill94@gmail.com</a>
-      </td>
-    </tr>
-    </table>
+          <a href="mailto:yougotwill94@gmail.com" target="_blank">yougotwill94@gmail.com</a>
+        </div>
+      </div>
+    </div>
   </div>
 
 
   <footer>
-    <span>Built with ☕️ and ❤️</span>
+    <span class="built-with">Built with ☕️ and ❤️</span>
     <span class="banner">Project of the Day: <a href="https://yougotwill.github.io/todo-box" target="_blank">Todo Box<img src="https://raw.githubusercontent.com/yougotwill/todo-box/master/src/resources/todobox.png"></a></span>
     <div>
       <!-- <a href="#" target="_blank"><img src="assets/images/cv.svg" class="icon" alt="CV"></a> -->

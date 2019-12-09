@@ -3,40 +3,50 @@
 <head>
   <title>Home</title>
   <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="js/theme-switch.js"></script>
+  <script type="text/javascript" src="js/nav-toggle.js"></script>
+  <script type="text/javascript" src="js/theme-toggle.js"></script>
 </head>
 <body class="dark-theme">
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="music.html">Music</a>
+    <div id="js-nav-btn" class="logo">
+      <img src="assets/images/hamburger-light.svg" class="light">
+      <img src="assets/images/hamburger-dark.svg" class="dark">
+    </div>
+    <ul id="js-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="music.html">Music</a></li>
+    </ul>
 
-    <div class="theme-switch" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
+    <div class="theme-toggle" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-theme') === 'dark-theme' ? 'light-theme' : 'dark-theme'); localStorage.getItem('mode') === 'dark-theme' ? document.querySelector('body').classList.add('dark-theme') : document.querySelector('body').classList.remove('dark-theme')">
       <img src="assets/images/theme-light.svg" class="light">
       <img src="assets/images/theme-dark.svg" class="dark">
     </div>
   </nav>
   <div class="content">
-    <img src="assets/images/avatar.jpg" alt="profile picture" class="image avatar round">
-    <h1>William Grant</h1>
+    <div class="profile">
+      <img src="assets/images/avatar.jpg" alt="profile picture" class="image border round">
+      <h1>William Grant</h1>
+    </div>
     <p><i>"Without music, life would be a mistake." - Friedrich Nietzsche</i></p>
 
-    <table class="bio-table">
+    <table class="info-grid">
     <tr>
-      <td class="subtitle left">Programmer 👨‍💻</td>
-      <td class="subtitle right">Teacher 👨‍🏫</td>
+      <td class="subtitle left">Programmer <span class="icon">👨‍💻</span></td>
+      <td class="subtitle right">Teacher <span class="icon">👨‍🏫</span></td>
     </tr>
     <tr>
-      <td class="subtitle left">South African 🇿🇦</td>
-      <td class="subtitle right">Living in Japan 🇯🇵</td>
+      <td class="subtitle left">South African <span class="icon">🇿🇦</span></td>
+      <td class="subtitle right">Living in Japan <span class="icon">🇯🇵</span></td>
     </tr>
     </table>
   </div>
 
   <footer>
-    <span>Built with ☕️ and ❤️</span>
+    <span class="built-with">Built with ☕️ and ❤️</span>
     <span class="banner">Project of the Day: <a href="https://yougotwill.github.io/todo-box" target="_blank">Todo Box<img src="https://raw.githubusercontent.com/yougotwill/todo-box/master/src/resources/todobox.png"></a></span>
     <div>
       <!-- <a href="#" target="_blank"><img src="assets/images/cv.svg" class="icon" alt="CV"></a> -->
