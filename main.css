@@ -333,6 +333,7 @@ body.dark-theme .project-card {
   display: flex;
   height: calc(100vh - 3.5em);
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   margin-top: 2em; }
   .frame-carousel .card {
     height: calc(100vh - 64px);
