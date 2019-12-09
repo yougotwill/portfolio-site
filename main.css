@@ -44,7 +44,7 @@ nav {
   nav ul {
     list-style-type: none;
     display: none;
-    padding-top: 2em; }
+    padding-top: 40%; }
     nav ul li {
       padding-top: 1.5em;
       padding-bottom: 1.5em; }
@@ -272,6 +272,8 @@ body.dark-theme .image {
   @media (min-width: 1024px) {
     .about-box {
       max-width: 700px; }
+      .about-box .left, .about-box .right {
+        margin-top: 5em; }
       .about-box .right {
         flex: 2; } }
 
@@ -497,7 +499,8 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   background: #e5e5e5;
   color: #49555F;
-  text-align: center; }
+  text-align: center;
+  overscroll-behavior: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial;
@@ -548,7 +551,7 @@ p a {
   z-index: -1; }
 
 .profile {
-  margin-top: 3em; }
+  margin-top: 7em; }
   .profile img {
     max-width: 150px;
     max-height: 150px; }

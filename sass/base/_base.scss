@@ -27,7 +27,7 @@ body {
   background: $background-color;
   color: $text-color;
   text-align: center;
-  // overscroll-behavior: none; // TODO move to desktop?
+  overscroll-behavior: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -97,7 +97,7 @@ p {
 }
 
 .profile {
-  margin-top: 3em;
+  margin-top: 7em;
   img {
     max-width: 150px;
     max-height: 150px;
