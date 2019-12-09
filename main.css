@@ -52,7 +52,9 @@ nav {
         padding-left: .5em;
         padding-right: .5em;
         font-weight: bold; }
-    nav ul.active {
+  nav.active {
+    max-height: 100%; }
+    nav.active ul {
       display: block;
       height: 100vh; }
   nav .logo {
