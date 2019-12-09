@@ -32,11 +32,11 @@ The [main.css](main.css) is formatted to be easy to read and not necessarily eas
 
 ### Desktop
 
-![Screenshot](assets/images/site-desktop.png)
+![Screenshot](assets/images/screenshot-desktop.png)
 
 ### Mobile
 
-![Screenshot](assets/images/site-mobile.png)
+![Screenshot](assets/images/screenshot-mobile.png)
 
 ## Things that helped and inspired me
 Site Look
