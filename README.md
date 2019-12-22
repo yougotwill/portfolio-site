@@ -26,6 +26,7 @@ The [main.css](main.css) is formatted to be easy to read and not necessarily eas
 
 
 ## TODO
+
 - [ ] Refactor Stylesheet
 
 ## Screenshots
