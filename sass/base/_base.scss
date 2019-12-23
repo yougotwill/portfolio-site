@@ -24,6 +24,7 @@
 }
 body {
   font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
   background: $background-color;
   color: $text-color;
   text-align: center;
@@ -97,10 +98,25 @@ p {
 }
 
 .profile {
-  margin-top: 7em;
+  margin-top: 4em;
   img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 175px;
+    max-height: 175px;
+  }
+  @include screen($tablet) {
+    h1 {
+      font-size: 3em;
+    }
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+}
+
+.quote {
+  @include screen($tablet) {
+    font-size: 1.2em;
   }
 }
 
