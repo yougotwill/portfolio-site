@@ -435,7 +435,6 @@ body.dark-theme .image {
 
 .project-card .details {
   display: inline-block;
-  width: 250px;
 }
 
 .project-card .details p {
@@ -469,12 +468,16 @@ body.dark-theme .image {
     top: 4.15em;
   }
   .project-card .details {
-    width: 300px;
     position: absolute;
     top: 0;
+    padding-right: 1em;
   }
   .project-card .details p {
     font-size: 1em;
+  }
+  .project-card .details.no-image {
+    text-align: center;
+    padding-left: 1em;
   }
 }
 

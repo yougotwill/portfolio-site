@@ -32,7 +32,6 @@
   }
   .details {
     display: inline-block;
-    width: 250px;
     p {
       font-size: 0.9em;
     }
@@ -59,11 +58,15 @@
       }
     }
     .details {
-      width: 300px;
       position: absolute;
       top: 0;
+      padding-right: 1em;
       p {
         font-size: 1em;
+      }
+      &.no-image {
+        text-align: center;
+        padding-left: 1em;
       }
     }
   }
