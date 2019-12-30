@@ -343,15 +343,30 @@ body.dark-theme .image {
 }
 
 .about-box {
-  margin: 0 auto;
-}
-
-.about-box .left, .about-box .right {
-  margin-top: 3em;
+  margin: 4em auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
 }
 
 .about-box .avatar {
-  margin-top: 0;
+  margin: .25em auto .5em;
+}
+
+.about-box .back-to-top {
+  text-align: center;
+}
+
+.about-box .back-to-top a {
+  display: block;
+}
+
+.about-box .info {
+  padding-bottom: 2em;
+}
+
+.about-box .info h2 {
+  margin-top: 1.5em;
 }
 
 .about-box .info .special {
@@ -363,48 +378,11 @@ body.dark-theme .image {
   margin: 0;
 }
 
-.about-box .biography {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-}
-
 @media (min-width: 768px) {
   .about-box {
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    font-size: 1.1em;
-  }
-  .about-box .left {
-    flex: 1;
-    padding-top: 1em;
-    padding-right: 2em;
-  }
-  .about-box .right {
-    flex: 1.5;
-    padding-left: 2em;
-  }
-  .about-box .right h2 {
-    display: none;
-  }
-  .about-box .biography {
-    padding: 0;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-box {
     max-width: 700px;
-  }
-  .about-box .left, .about-box .right {
-    margin-top: 4em;
-  }
-  .about-box .right {
-    flex: 2;
+    text-align: left;
+    font-size: 1.1em;
   }
 }
 
@@ -786,17 +764,6 @@ p a {
 .content {
   margin: 0 auto;
   padding: 1.5em 0;
-  position: relative;
-}
-
-.content .back-to-top {
-  padding-left: calc(50% - (50px / 2) + 5px);
-  padding-right: calc(50% - (50px / 2) + 5px);
-}
-
-.content .back-to-top img {
-  width: 50px;
-  height: 50px;
   position: relative;
 }
 
