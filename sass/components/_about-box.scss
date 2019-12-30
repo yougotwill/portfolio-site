@@ -25,9 +25,20 @@
       margin: 0;
     }
   }
+  .skills {
+    text-align: center;
+    list-style: inside;
+    li {
+      padding: .5em 0;
+    }
+  }
   @include screen($tablet) {
     max-width: 700px;
     text-align: left;
     font-size: 1.1em;
+    .skills {
+      text-align: left;
+    }
   }
 }
+
