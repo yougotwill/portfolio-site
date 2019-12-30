@@ -1,14 +1,14 @@
 @import '../components/_theme-toggle';
 
-$background-color--light: #e5e5e5;
-$foreground-color--light: #f7f7f7;
-$nav-color--light: #d3d3d3;
-$text-color--light: #49555F;
+$background-color--light: #ffffff;
+$foreground-color--light: #F7F7F7;
+$nav-color--light: #999999;
+$text-color--light: #363E45;
 
-$background-color--dark: #3F3F3F;
-$foreground-color--dark: #232323;
-$nav-color--dark: #1E1E1E;
-$text-color--dark: #D3D9DD;
+$background-color--dark: #111111;
+$foreground-color--dark: #333333;
+$nav-color--dark: #111111;
+$text-color--dark: #CCCCCC;
 
 $background-color: $background-color--light;
 $foreground-color: $foreground-color--light;
@@ -16,16 +16,12 @@ $nav-color: $nav-color--light;
 $text-color: $text-color--light;
 
 // blue
-$primary-color: #577EB5;
-$secondary-color: #90A2D4;
-
-// green
-// $primary-color: #00d68b;
-// $secondary-color: #009a68;
+$primary-color: #0084C2;
+$secondary-color: #0FB3FF;
 
 // links
-$tertiary-color: #fd2965;
-$quaternary-color: #ed0244;
+$link-color: $primary-color;
+$link-color--dark: #fd2965;
 
 // components
 $button-color: none;

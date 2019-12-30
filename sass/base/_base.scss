@@ -33,24 +33,23 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: Arial;
-  color: $primary-color;
+  color: $text-color;
   &.heading{
     margin-top: 1em;
     margin-bottom: 1em;
     @include screen($laptop) {
       &:hover{
         @include grow;
-        color: $secondary-color;
       }
     }
   }
 }
 
 a {
-  color: $tertiary-color;
+  color: $link-color;
   text-decoration: none;
   &:hover {
-    color: $quaternary-color;
+    color: $text-color;
   }
 }
 
@@ -108,8 +107,8 @@ p {
       font-size: 3em;
     }
     img {
-      max-width: 200px;
-      max-height: 200px;
+      max-width: 250px;
+      max-height: 250px;
     }
   }
 }
@@ -121,7 +120,7 @@ p {
 }
 
 .special {
-  color: $tertiary-color;
+  color: $link-color;
 }
 
 .projects {
@@ -129,11 +128,18 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include screen($laptop) {
-  }
 }
 
 body.dark-theme {
   background: $background-color--dark;
   color: $text-color--dark;
+  h1,h2,h3,h4,h5,h6 {
+    color: $text-color--dark;
+  }
+  a {
+    color: $link-color--dark;
+    &:hover {
+      color: $text-color--dark;
+    }
+  }
 }

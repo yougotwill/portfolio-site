@@ -42,6 +42,8 @@ The [main.css](main.css) is formatted to be easy to read and not necessarily eas
 ## Things that helped and inspired me
 Site Look
 - Indigo Minimalist Jekyll Template [https://github.com/sergiokopplin/indigo](https://github.com/sergiokopplin/indigo)
+- Sindre Sorhus [https://sindresorhus.com/](https://sindresorhus.com/)
+- Facebook Messenger Light / Dark Modes [https://www.messenger.com/](https://www.messenger.com/)
 
 Social Media Icons:
 

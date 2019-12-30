@@ -5,7 +5,7 @@
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    color: $tertiary-color;
+    color: $link-color;
     position: absolute;
     z-index: 1;
     bottom: 200%;
@@ -19,7 +19,7 @@
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: $tertiary-color transparent transparent transparent;
+      border-color: $link-color transparent transparent transparent;
     }
   }
 

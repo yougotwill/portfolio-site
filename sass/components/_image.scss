@@ -7,7 +7,7 @@
   max-width: 150px;
   max-height: 150px;
   &.border {
-    border: 3px solid $nav-color;
+    border: 1px solid $nav-color;
   }
   &.round {
     border-radius: 50%;
@@ -26,7 +26,7 @@ body.dark-theme {
   .image {
     background: $foreground-color--dark;
     &.border {
-      border: 3px solid $nav-color--dark;
+      border: 1px solid $nav-color--dark;
     }
   }
 }
