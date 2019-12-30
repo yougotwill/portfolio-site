@@ -24,20 +24,15 @@ The [main.css](main.css) is formatted to be easy to read and not necessarily eas
   3. It should compile and overwrite [main.css](main.css).
 4. Open [index.html](index.html) in your browser and see what you think.
 
-
-## TODO
-
-- [ ] Refactor Stylesheet
-
 ## Screenshots
 
-### Desktop
+### Dark Theme
 
-![Screenshot](assets/images/screenshot-desktop.png)
+![Screenshot](assets/images/screenshot-dark.png)
 
-### Mobile
+### Light Theme
 
-![Screenshot](assets/images/screenshot-mobile.png)
+![Screenshot](assets/images/screenshot-light.png)
 
 ## Things that helped and inspired me
 Site Look
