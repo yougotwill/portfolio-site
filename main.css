@@ -240,10 +240,6 @@ body.dark-theme .dark {
   max-height: 150px;
 }
 
-.image.border {
-  border: 1px solid #999999;
-}
-
 .image.round {
   border-radius: 50%;
 }
@@ -264,10 +260,6 @@ body.dark-theme .dark {
 
 body.dark-theme .image {
   background: #333333;
-}
-
-body.dark-theme .image.border {
-  border: 1px solid #111111;
 }
 
 .tooltip {

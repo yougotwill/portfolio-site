@@ -6,9 +6,6 @@
   border-radius: 6px;
   max-width: 150px;
   max-height: 150px;
-  &.border {
-    border: 1px solid $nav-color;
-  }
   &.round {
     border-radius: 50%;
   }
@@ -25,8 +22,5 @@
 body.dark-theme {
   .image {
     background: $foreground-color--dark;
-    &.border {
-      border: 1px solid $nav-color--dark;
-    }
   }
 }
