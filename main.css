@@ -128,7 +128,7 @@ nav .logo .light {
 }
 
 body.dark-theme nav {
-  background: #111111;
+  background: #1a1a1a;
   border-bottom: none;
 }
 
@@ -718,7 +718,7 @@ footer .icon:hover {
 }
 
 body.dark-theme footer {
-  background: #111111;
+  background: #1a1a1a;
   border-top: none;
 }
 
@@ -828,7 +828,7 @@ p a {
 }
 
 body.dark-theme {
-  background: #111111;
+  background: #1a1a1a;
   color: #CCCCCC;
 }
 
