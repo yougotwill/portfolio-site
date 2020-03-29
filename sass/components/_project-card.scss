@@ -38,7 +38,7 @@
   }
   @include screen($tablet) {
     @include grow(1.1);
-    width: 520px;
+    width: 560px;
     height: 200px;
     margin: 0 auto 2.5em;
     text-align: left;
@@ -67,6 +67,7 @@
       &.no-image {
         text-align: center;
         padding-left: 1em;
+        width: calc(100% - 2em);
       }
     }
   }

@@ -444,7 +444,7 @@ body.dark-theme .image {
 @media (min-width: 768px) {
   .project-card {
     transition: transform .4s ease-in-out;
-    width: 520px;
+    width: 560px;
     height: 200px;
     margin: 0 auto 2.5em;
     text-align: left;
@@ -478,6 +478,7 @@ body.dark-theme .image {
   .project-card .details.no-image {
     text-align: center;
     padding-left: 1em;
+    width: calc(100% - 2em);
   }
 }
 
