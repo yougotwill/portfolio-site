@@ -27,7 +27,7 @@
   }
   .skills {
     text-align: center;
-    list-style: inside;
+    list-style: none;
     li {
       padding: .5em 0;
     }
@@ -37,7 +37,12 @@
     text-align: left;
     font-size: 1.1em;
     .skills {
+      display: inline-block;
+      vertical-align: top;
       text-align: left;
+      list-style: inside;
+      padding-right: 6em;
+      padding-bottom: 2em;
     }
   }
 }

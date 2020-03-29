@@ -380,7 +380,7 @@ body.dark-theme .image {
 
 .about-box .skills {
   text-align: center;
-  list-style: inside;
+  list-style: none;
 }
 
 .about-box .skills li {
@@ -394,7 +394,12 @@ body.dark-theme .image {
     font-size: 1.1em;
   }
   .about-box .skills {
+    display: inline-block;
+    vertical-align: top;
     text-align: left;
+    list-style: inside;
+    padding-right: 6em;
+    padding-bottom: 2em;
   }
 }
 
