@@ -1,5 +1,7 @@
-###SASS###
+# dev files
+TODO.md 
 
+#sass
 .sass-cache/
 *.css.map
 *.map

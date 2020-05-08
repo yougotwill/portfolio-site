@@ -10,6 +10,7 @@ ol {
 
 .theme-toggle {
   text-align: right;
+  margin-right: 4px;
 }
 
 .theme-toggle .dark {
@@ -32,7 +33,7 @@ ol {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .5em;
+  right: .9em;
 }
 
 body.dark-theme .light {
@@ -142,6 +143,7 @@ body.dark-theme nav .logo .light {
 
 .theme-toggle {
   text-align: right;
+  margin-right: 4px;
 }
 
 .theme-toggle .dark {
@@ -164,7 +166,7 @@ body.dark-theme nav .logo .light {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .5em;
+  right: .9em;
 }
 
 body.dark-theme .light {
@@ -200,6 +202,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 
 .theme-toggle {
   text-align: right;
+  margin-right: 4px;
 }
 
 .theme-toggle .dark {
@@ -222,7 +225,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .5em;
+  right: .9em;
 }
 
 body.dark-theme .light {
@@ -304,6 +307,7 @@ body.dark-theme .image {
 
 .info-grid {
   padding-top: 1em;
+  padding-bottom: 5em;
   margin: 0 auto;
 }
 
@@ -343,26 +347,13 @@ body.dark-theme .image {
 }
 
 .about-box {
-  margin: 4em auto;
+  margin: 2em auto;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 2em;
 }
 
 .about-box .avatar {
   margin: .25em auto .5em;
-}
-
-.about-box .back-to-top {
-  text-align: center;
-}
-
-.about-box .back-to-top a {
-  display: block;
-}
-
-.about-box .info {
-  padding-bottom: 2em;
 }
 
 .about-box .info h2 {
@@ -532,6 +523,7 @@ body.dark-theme .project-card {
 
 .theme-toggle {
   text-align: right;
+  margin-right: 4px;
 }
 
 .theme-toggle .dark {
@@ -554,7 +546,7 @@ body.dark-theme .project-card {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .5em;
+  right: .9em;
 }
 
 body.dark-theme .light {
@@ -567,6 +559,7 @@ body.dark-theme .dark {
 
 .theme-toggle {
   text-align: right;
+  margin-right: 4px;
 }
 
 .theme-toggle .dark {
@@ -589,7 +582,7 @@ body.dark-theme .dark {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .5em;
+  right: .9em;
 }
 
 body.dark-theme .light {
@@ -788,6 +781,20 @@ p a {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .content h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .content h3 {
+    font-size: 1.5em;
+  }
+}
+
+.content.divide {
+  background: #F7F7F7;
+}
+
 .loading {
   position: absolute;
   top: 33.33%;
@@ -798,7 +805,7 @@ p a {
 }
 
 .profile {
-  margin-top: 4em;
+  margin-top: 5em;
 }
 
 .profile img {
@@ -831,6 +838,7 @@ p a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 4em;
 }
 
 body.dark-theme {
@@ -848,4 +856,8 @@ body.dark-theme a {
 
 body.dark-theme a:hover {
   color: #CCCCCC;
+}
+
+body.dark-theme .content.divide {
+  background: #333333;
 }
