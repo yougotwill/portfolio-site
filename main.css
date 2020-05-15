@@ -15,15 +15,15 @@ ol {
 
 .theme-toggle .dark {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-top: 3px;
 }
 
 .theme-toggle .light {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .theme-toggle .light svg {
@@ -32,7 +32,7 @@ ol {
 
 .theme-toggle img {
   position: absolute;
-  top: 3px;
+  top: 8px;
   right: .5em;
 }
 
@@ -57,15 +57,16 @@ nav {
   right: 0;
   z-index: 2;
   height: 100%;
-  max-height: 32px;
+  max-height: 48px;
   background: #ffffff;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  padding-top: 8px;
 }
 
 nav ul {
   list-style-type: none;
   display: none;
-  padding-top: 40%;
+  padding-top: 33.3%;
 }
 
 nav ul li {
@@ -90,16 +91,16 @@ nav.active ul {
 
 nav .logo {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 nav .logo img {
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: .5em;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 nav .logo .dark {
@@ -115,7 +116,7 @@ nav .logo .light {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    padding-top: 0;
   }
   nav ul {
     display: flex;
@@ -154,15 +155,15 @@ body.dark-theme nav .logo .light {
 
 .theme-toggle .dark {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-top: 3px;
 }
 
 .theme-toggle .light {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .theme-toggle .light svg {
@@ -171,7 +172,7 @@ body.dark-theme nav .logo .light {
 
 .theme-toggle img {
   position: absolute;
-  top: 3px;
+  top: 8px;
   right: .5em;
 }
 
@@ -219,15 +220,15 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 
 .theme-toggle .dark {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-top: 3px;
 }
 
 .theme-toggle .light {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .theme-toggle .light svg {
@@ -236,7 +237,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 
 .theme-toggle img {
   position: absolute;
-  top: 3px;
+  top: 8px;
   right: .5em;
 }
 
@@ -553,15 +554,15 @@ body.dark-theme .project-card {
 
 .theme-toggle .dark {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-top: 3px;
 }
 
 .theme-toggle .light {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .theme-toggle .light svg {
@@ -570,7 +571,7 @@ body.dark-theme .project-card {
 
 .theme-toggle img {
   position: absolute;
-  top: 3px;
+  top: 8px;
   right: .5em;
 }
 
@@ -595,15 +596,15 @@ body.dark-theme .dark {
 
 .theme-toggle .dark {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-top: 3px;
 }
 
 .theme-toggle .light {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .theme-toggle .light svg {
@@ -612,7 +613,7 @@ body.dark-theme .dark {
 
 .theme-toggle img {
   position: absolute;
-  top: 3px;
+  top: 8px;
   right: .5em;
 }
 

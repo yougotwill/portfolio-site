@@ -5,13 +5,14 @@ nav {
   right: 0;
   z-index: 2;
   height: 100%;
-  max-height: 32px;
+  max-height: 48px;
   background: $background-color;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  padding-top: 8px;
   ul {
     list-style-type: none;
     display: none;
-    padding-top: 40%;
+    padding-top: 33.3%;
     li {
       padding-top: 1.5em;
       padding-bottom: 1.5em;
@@ -32,14 +33,14 @@ nav {
   }
   .logo {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     img {
       position: absolute;
-      top: 5px;
+      top: 10px;
       left: .5em;
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
     }
     .dark {
       display: block;
@@ -52,7 +53,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    padding-top: 0;
     ul {
       display: flex;
       flex-direction: row;
