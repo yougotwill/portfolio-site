@@ -703,7 +703,7 @@ footer {
   padding: 0;
   z-index: 2;
   height: 100%;
-  max-height: 32px;
+  max-height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -715,14 +715,14 @@ footer a {
 }
 
 footer a img {
-  width: 18px;
-  height: 18px;
+  width: 27px;
+  height: 27px;
   background-color: transparent;
 }
 
 footer span {
   font-weight: 700;
-  padding-left: .5em;
+  padding-left: 1em;
 }
 
 footer .built-with, footer .banner {
@@ -745,12 +745,16 @@ footer .icon:hover {
   padding-bottom: .25em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   footer {
     justify-content: space-between;
+    font-size: 1.1em;
   }
   footer .built-with, footer .banner {
     display: block;
+  }
+  footer .banner {
+    padding-left: 5.5em;
   }
 }
 
