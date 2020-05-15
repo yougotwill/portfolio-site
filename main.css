@@ -33,7 +33,13 @@ ol {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .9em;
+  right: .5em;
+}
+
+@media (min-width: 768px) {
+  .theme-toggle img {
+    right: .9em;
+  }
 }
 
 body.dark-theme .light {
@@ -166,7 +172,13 @@ body.dark-theme nav .logo .light {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .9em;
+  right: .5em;
+}
+
+@media (min-width: 768px) {
+  .theme-toggle img {
+    right: .9em;
+  }
 }
 
 body.dark-theme .light {
@@ -225,7 +237,13 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .9em;
+  right: .5em;
+}
+
+@media (min-width: 768px) {
+  .theme-toggle img {
+    right: .9em;
+  }
 }
 
 body.dark-theme .light {
@@ -347,17 +365,22 @@ body.dark-theme .image {
 }
 
 .about-box {
-  margin: 2em auto;
+  margin: 0 auto 2em;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.about-box h2 {
+  text-align: center;
 }
 
 .about-box .avatar {
   margin: .25em auto .5em;
 }
 
-.about-box .info h2 {
-  margin-top: 1.5em;
+.about-box .info .heading {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .about-box .info .special {
@@ -398,7 +421,7 @@ body.dark-theme .image {
   background: #F7F7F7;
   width: 300px;
   height: 300px;
-  margin: 0 1em 2.5em;
+  margin: 1em 1em 2.5em;
   padding-bottom: 2em;
   border: 1px solid #999999;
   border-radius: 6px;
@@ -410,8 +433,9 @@ body.dark-theme .image {
   align-items: center;
 }
 
-.project-card h2 {
-  margin-bottom: .25em;
+.project-card h3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .project-card img {
@@ -449,8 +473,9 @@ body.dark-theme .image {
   .project-card:hover {
     transform: scale(1.1);
   }
-  .project-card h2 {
-    font-size: 30px;
+  .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .project-card img {
     max-width: 150px;
@@ -546,7 +571,13 @@ body.dark-theme .project-card {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .9em;
+  right: .5em;
+}
+
+@media (min-width: 768px) {
+  .theme-toggle img {
+    right: .9em;
+  }
 }
 
 body.dark-theme .light {
@@ -582,7 +613,13 @@ body.dark-theme .dark {
 .theme-toggle img {
   position: absolute;
   top: 3px;
-  right: .9em;
+  right: .5em;
+}
+
+@media (min-width: 768px) {
+  .theme-toggle img {
+    right: .9em;
+  }
 }
 
 body.dark-theme .light {
@@ -738,19 +775,36 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial;
   color: #363E45;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 1em;
 }
 
-@media (min-width: 1024px) {
-  h1.heading:hover, h2.heading:hover, h3.heading:hover, h4.heading:hover, h5.heading:hover, h6.heading:hover {
-    transition: transform .4s ease-in-out;
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3em;
   }
-  h1.heading:hover:hover, h2.heading:hover:hover, h3.heading:hover:hover, h4.heading:hover:hover, h5.heading:hover:hover, h6.heading:hover:hover {
-    transform: scale(1.2);
+  h2 {
+    font-size: 2.25em;
+  }
+  h3 {
+    font-size: 1.75em;
   }
 }
 
@@ -777,18 +831,8 @@ p a {
 
 .content {
   margin: 0 auto;
-  padding: 1.5em 0;
+  padding: 1em 0;
   position: relative;
-}
-
-@media (min-width: 768px) {
-  .content h2 {
-    font-size: 2em;
-    text-align: center;
-  }
-  .content h3 {
-    font-size: 1.5em;
-  }
 }
 
 .content.divide {
@@ -814,9 +858,6 @@ p a {
 }
 
 @media (min-width: 768px) {
-  .profile h1 {
-    font-size: 3em;
-  }
   .profile img {
     max-width: 250px;
     max-height: 250px;
@@ -839,6 +880,22 @@ p a {
   justify-content: center;
   align-items: center;
   padding-bottom: 4em;
+}
+
+.projects h3.heading {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .projects h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .projects h3.heading {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
 }
 
 body.dark-theme {

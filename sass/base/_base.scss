@@ -34,14 +34,35 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: Arial;
   color: $text-color;
+  margin-top: 0;
+  margin-bottom: 0;
   &.heading{
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom: 1em;
-    @include screen($laptop) {
-      &:hover{
-        @include grow;
-      }
-    }
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+@include screen($tablet) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+  h3 {
+    font-size: 1.75em;
   }
 }
 
@@ -52,8 +73,6 @@ a {
     color: $text-color;
   }
 }
-
-img {}
 
 p {
   a {
@@ -74,17 +93,8 @@ p {
 
 .content {
   margin: 0 auto;
-  padding: 1.5em 0;
+  padding: 1em 0;
   position: relative;
-  @include screen($tablet) {
-    h2 {
-      font-size: 2em;
-      text-align: center;
-    }
-    h3 {
-      font-size: 1.5em;
-    }
-  }
   &.divide {
     background: $foreground-color;
   }
@@ -106,9 +116,6 @@ p {
     max-height: 175px;
   }
   @include screen($tablet) {
-    h1 {
-      font-size: 3em;
-    }
     img {
       max-width: 250px;
       max-height: 250px;
@@ -132,6 +139,22 @@ p {
   justify-content: center;
   align-items: center;
   padding-bottom: 4em;
+  h3 {
+    &.heading {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+  @include screen($tablet) {
+    h3 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      &.heading {
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+    }
+  }
 }
 
 body.dark-theme {
