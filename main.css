@@ -38,6 +38,7 @@ ol {
 
 @media (min-width: 768px) {
   .theme-toggle img {
+    top: 5px;
     right: .9em;
   }
 }
@@ -178,6 +179,7 @@ body.dark-theme nav .logo .light {
 
 @media (min-width: 768px) {
   .theme-toggle img {
+    top: 5px;
     right: .9em;
   }
 }
@@ -243,6 +245,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 
 @media (min-width: 768px) {
   .theme-toggle img {
+    top: 5px;
     right: .9em;
   }
 }
@@ -577,6 +580,7 @@ body.dark-theme .project-card {
 
 @media (min-width: 768px) {
   .theme-toggle img {
+    top: 5px;
     right: .9em;
   }
 }
@@ -619,6 +623,7 @@ body.dark-theme .dark {
 
 @media (min-width: 768px) {
   .theme-toggle img {
+    top: 5px;
     right: .9em;
   }
 }

@@ -24,6 +24,7 @@
   }
   @include screen($tablet) {
     img {
+      top: 5px;
       right: .9em;
     }
   }
