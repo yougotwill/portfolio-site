@@ -1,8 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var navElement = document.querySelector('nav');
-  var navBtn = document.querySelector('#js-nav-btn');
+  const body = document.querySelector('body');
+  const navElement = document.querySelector('nav');
+  const navToggle = document.querySelector('#js-nav-toggle');
+  const navItems = document.querySelector('#js-nav-items');
 
-  navBtn.addEventListener('click', function () {
+  const toggleNav = () => {
+    body.style.overflowY = body.style.overflowY ? '' : 'hidden';
     navElement.classList.toggle('active');
+    navToggle.classList.toggle('active');
+  };
+
+  navToggle.addEventListener('click', function () {
+    toggleNav();
+  });
+
+  navItems.addEventListener('click', function (event) {
+    if (!navToggle.classList.contains('active')) return;
+    if (event.target.tagName === 'UL') return;
+    toggleNav();
   });
 });
