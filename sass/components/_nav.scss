@@ -5,9 +5,9 @@ nav {
   right: 0;
   z-index: 2;
   height: 100%;
-  max-height: 48px;
+  max-height: 40px;
   background: $background-color;
-  font-size: 1.5em;
+  font-size: 1.33em;
   padding-top: 8px;
   ul {
     list-style-type: none;
@@ -33,14 +33,14 @@ nav {
   }
   .logo {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     img {
       position: absolute;
-      top: 10px;
+      top: 12px;
       left: .5em;
-      width: 30px;
-      height: 30px;
+      width: 24px;
+      height: 24px;
     }
     .dark {
       display: block;
