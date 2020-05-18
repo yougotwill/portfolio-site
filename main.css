@@ -60,11 +60,6 @@ nav {
         padding-left: .5em;
         padding-right: .5em;
         font-weight: bold; }
-  nav.active {
-    max-height: 100%; }
-    nav.active ul {
-      display: block;
-      height: 100vh; }
   nav .logo {
     display: block;
     width: 24px;
@@ -78,6 +73,17 @@ nav {
     nav .logo .dark {
       display: block; }
     nav .logo .light {
+      display: none; }
+    nav .logo .close {
+      display: none; }
+  nav.active {
+    max-height: 100%; }
+    nav.active ul {
+      display: block;
+      height: 100vh; }
+    nav.active .logo .close {
+      display: block; }
+    nav.active .logo .open {
       display: none; }
   @media (min-width: 768px) {
     nav {

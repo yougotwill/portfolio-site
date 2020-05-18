@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const body = document.querySelector('body');
-  const navElement = document.querySelector('nav');
-  const navToggle = document.querySelector('#js-nav-toggle');
-  const navItems = document.querySelector('#js-nav-items');
+  var body = document.querySelector('body');
+  var navElement = document.querySelector('nav');
+  var navToggle = document.querySelector('#js-nav-toggle');
+  var navItems = document.querySelector('#js-nav-items');
 
-  const toggleNav = () => {
+  function toggleNav () {
     body.style.overflowY = body.style.overflowY ? '' : 'hidden';
     navElement.classList.toggle('active');
     navToggle.classList.toggle('active');
-  };
+  }
 
   navToggle.addEventListener('click', function () {
     toggleNav();
