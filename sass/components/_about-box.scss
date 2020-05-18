@@ -1,21 +1,17 @@
 .about-box {
-  margin: 4em auto;
+  margin: 0 auto 2em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 2em;
+  h2 {
+    text-align: center;
+  }
   .avatar {
     margin: .25em auto .5em;
   }
-  .back-to-top {
-    text-align: center;
-    a {
-      display: block;
-    }
-  }
   .info {
-    padding-bottom: 2em;
-    h2 {
-      margin-top: 1.5em;
+    .heading {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
     }
     .special {
       margin-top: 1em;

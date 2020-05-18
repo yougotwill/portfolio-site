@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home</title>
+  <title>William Grant</title>
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧔🏻</text></svg>">
   <link rel="stylesheet" type="text/css" href="main.css">
   <script type="text/javascript" src="js/nav-toggle.js"></script>
   <script type="text/javascript" src="js/theme-toggle.js"></script>
 </head>
 <body class="dark-theme">
   <nav>
-    <div id="js-nav-btn" class="logo">
-      <img src="assets/ui/hamburger-light.svg" class="light">
-      <img src="assets/ui/hamburger-dark.svg" class="dark">
+    <div id="js-nav-toggle" class="logo">
+      <div class="open">
+        <img src="assets/ui/hamburger-light.svg" class="light">
+        <img src="assets/ui/hamburger-dark.svg" class="dark">
+      </div>
+      <div class="close">
+        <img src="assets/ui/close-light.svg" class="light">
+        <img src="assets/ui/close-dark.svg" class="dark">
+      </div>
     </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+    <ul id="js-nav-items">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="music.html">Music</a></li>
     </ul>
 
@@ -26,10 +33,11 @@
       <img src="assets/ui/theme-dark.svg" class="dark">
     </div>
   </nav>
-  <div class="content">
+
+  <section id="home">
     <div class="profile">
       <img src="assets/images/avatar-1.jpg" alt="profile picture" class="image round">
-      <h1>William Grant</h1>
+      <h1 class="heading">William Grant</h1>
     </div>
     <p class="quote"><i>"Without music, life would be a mistake." - Friedrich Nietzsche</i></p>
 
@@ -43,7 +51,188 @@
       <td class="subtitle right">Living in Japan <span class="icon">🇯🇵</span></td>
     </tr>
     </table>
-  </div>
+  </section>
+  <section id="about" class="divide">
+    <div class="about-box">
+      <h2 class="heading">About Me</h2>
+      <div class="biography">
+        <p>Technology has been a large part of my life from a young age. Over the years I have enjoyed engaging in various projects related to internet security, artificial intelligence, web/app/mobile development, and finally video game design.</p>
+
+        <p>Having recently moved to Japan when I'm not coding I am working on my Japanese which has been a fun and engaging experience. Currently I am an English Teacher which has been an incredible opportunity to further improve myself and gain new skills.</p>
+
+        <p>Want to know more? Feel free to email me.</p>
+
+        <a href="mailto:yougotwill94@gmail.com" target="_blank">yougotwill94@gmail.com</a>
+      </div>
+      <div class="info">
+        <h3 class="heading">More</h3>
+        <p class="special">Current Location:</p>
+        <p>Nishiwaki City, Hyogo, Japan</p>
+        <p class="special">Does:</p>
+        <p>Ramen, Music, Reading, Travel</p>
+        <p class="special">Doesn't:</p>
+        <p>Chilli, Humidity, Gym (WIP)</p>
+        <h3 class="heading">Skills</h3>
+        <ul class="skills">
+          <li>React.js</li>
+          <li>Ember.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+        </ul>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Tailwind CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <ul class="skills">
+          <li>Unity3D</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="projects">
+      <h2 class="heading">Portfolio</h2>
+      <h3 class="heading">Websites</h3>
+      <div class="project-card">
+        <div class="avatar screenshot">
+          <img src="https://raw.githubusercontent.com/yougotwill/art-gallery/master/assets/screenshots/screenshot-light-1.jpg">
+        </div>
+        <div class="details">
+          <h3>Art Gallery</h3>
+          <p>A free to use website template for artists to showcase their portfolio on the web.</p>
+          <a href="https://github.com/yougotwill/art-gallery" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar screenshot">
+          <img src="https://raw.githubusercontent.com/yougotwill/sortifiler/master/src/assets/screenshots/screenshot.png">
+        </div>
+        <div class="details">
+          <h3>Sortifiler Landing Page</h3>
+          <p>Sortifiler needed a landing page and I wanted to learn TailwindCSS and so this repo was born.</p>
+          <a href="https://github.com/yougotwill/sortifiler" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar screenshot">
+          <img src="assets/images/screenshot-dark.png">
+        </div>
+        <div class="details">
+          <h3>yougotwill.github.io</h3>
+          <p>The source code for this website! Built for beginner developers and easy to use. No need for any specific frameworks or tools.</p>
+          <a href="https://github.com/yougotwill/yougotwill.github.io" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar">
+          <img src="https://raw.githubusercontent.com/yougotwill/todo-box/master/src/resources/todobox.png">
+        </div>
+        <div class="details">
+          <h3>Todo Box</h3>
+          <p>A minimalist todo list app designed for you to get stuff done!</p>
+          <a href="https://github.com/yougotwill/todo-box" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <h3 class="heading">Apps / Games</h3>
+      <div class="project-card">
+        <div class="avatar">
+          <img src="assets/ui/mystery.svg">
+        </div>
+        <div class="details">
+          <h3>Sortifiler Desktop</h3>
+          <p>The desktop application to get your files sorted! </p>
+          <a href="#" >Coming Soon...</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar screenshot">
+          <img src="https://raw.githubusercontent.com/yougotwill/Eden/masterFix/Main%20Menu.png">
+        </div>
+        <div class="details">
+          <h3>Eden's Odyssey</h3>
+          <p>University Project: FPS & VR video game for use with Noitom Perception Neuron Motion Capture suit and Google Cardboard</p>
+          <a href="https://github.com/yougotwill/Eden" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <h3 class="heading">Other Projects</h3>
+      <div class="project-card">
+        <div class="details no-image">
+          <h3>Sortifiler</h3>
+          <p>An opinionated API to sort your files and folders easily.</p>
+          <a href="https://github.com/yougotwill/sortifiler-core" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="details no-image">
+          <h3>Sortifiler CLI</h3>
+          <p>An opinionated command line interface to sort your files and folders easily while feeling like <a href="https://knowyourmeme.com/memes/hackerman" target="_blank">Hackerman</a>.</p>
+          <a href="https://github.com/yougotwill/sortifiler-cli" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar">
+          <img src="https://github.com/yougotwill/origamivsc/raw/master/origami.jpg">
+        </div>
+        <div class="details">
+          <h3>OrigamiVSC</h3>
+          <p>Like <a href="https://github.com/SublimeText/Origami">Origami</a> but for VS Code.</p>
+          <a href="https://github.com/yougotwill/origamivsc" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar screenshot">
+          <img src="https://github.com/yougotwill/gray-matter-iterm2/raw/master/assets/gray-matter-dark.png">
+        </div>
+        <div class="details">
+          <h3>Gray Matter for iTerm2</h3>
+          <p>A port of the brilliant <a href="https://github.com/philipbelesky/gray-matter" target="_blank">Gray Matter</a> color scheme by @philipbelesky for iTerm2</p>
+          <a href="https://github.com/yougotwill/gray-matter-iterm2" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar screenshot">
+          <img src="https://github.com/yougotwill/darkbox-typora-theme/raw/master/assets/screenshot.png">
+        </div>
+        <div class="details">
+          <h3>Darkbox Theme</h3>
+          <p>A dark theme for <a href="https://typora.io" target="_blank">Typora</a> inspired by the <a href="https://theme.typora.io/theme/Dropbox/" target="_blank">Dropbox Theme</a> using the colours of the <a href="https://github.com/kimtj12/typora-mojave-theme" target="_blank">Mojave Theme</a></p>
+          <a href="https://github.com/yougotwill/darkbox-typora-theme" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <h3 class="heading">Open Source Contributions</h3>
+      <div class="project-card">
+        <div class="avatar">
+          <img src="https://raw.githubusercontent.com/BoostIO/Boostnote/master/resources/app.png">
+        </div>
+        <div class="details">
+          <h3>BoostNote</h3>
+          <p>An open source markdown editor for Mac, Windows and Linux. The intuitive and stylish note taking tool for developers.</p>
+          <a href="https://github.com/yougotwill/Boostnote" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="avatar">
+          <img src="https://raw.githubusercontent.com/dracula/coteditor/master/screenshot.png">
+        </div>
+        <div class="details">
+          <h3>Dracula</h3>
+          <p>A dark theme for many editors, shells, and more.</p>
+          <p><i>I have contributed the <a href="https://coteditor.com" target="_blank">CotEditor</a> theme.</i></p>
+          <a href="https://github.com/yougotwill/dracula-coteditor" target="_blank">View Project</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
   <footer>
     <span class="built-with">Built with ☕️ and ❤️</span>
