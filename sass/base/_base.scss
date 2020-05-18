@@ -30,6 +30,12 @@ body {
   text-align: center;
   overscroll-behavior: none;
 }
+section {
+  padding: 3em 0;
+  &.divide {
+    background: $foreground-color;
+  }
+}
 
 h1,h2,h3,h4,h5,h6 {
   font-family: Arial;
@@ -91,15 +97,6 @@ p {
   }
 }
 
-.content {
-  margin: 0 auto;
-  padding: 1em 0;
-  position: relative;
-  &.divide {
-    background: $foreground-color;
-  }
-}
-
 .loading {
   position: absolute;
   top: 33.33%;
@@ -110,7 +107,7 @@ p {
 }
 
 .profile {
-  margin-top: 5em;
+  margin-top: 2em;
   img {
     max-width: 175px;
     max-height: 175px;
@@ -169,7 +166,7 @@ body.dark-theme {
       color: $text-color--dark;
     }
   }
-  .content {
+  section {
     &.divide {
       background: $foreground-color--dark;
     }
