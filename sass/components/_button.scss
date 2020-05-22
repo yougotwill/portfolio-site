@@ -1,12 +1,10 @@
 @import '../base/_colors.scss';
-@import '../mixins/_grow.scss';
 
 .button {
   color: $text-color;
   background: $button-color;
   text-decoration: none;
   &:hover{
-    @include grow;
     color: $secondary-color;
   }
 }
