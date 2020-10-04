@@ -38,10 +38,10 @@
     }
   }
   @include screen($tablet) {
-    @include grow(1.1);
-    width: 560px;
+    // @include grow(1.1);
+    width: 480px;
     height: 200px;
-    margin: 0 auto 2.5em;
+    margin: 0 0.5rem 2.5em;
     text-align: left;
     display: block;
     h3 {
@@ -53,7 +53,7 @@
       max-height: 150px;
     }
     .avatar {
-      width: 200px;
+      width: 180px;
       top: 1.5em;
       &.screenshot {
         top:  4.15em;
@@ -72,11 +72,19 @@
         width: calc(100% - 2em);
       }
     }
+    &:hover {
+      background: darken($color: $background-color, $amount: 10);
+      border-color: black;
+    }
   }
 }
 
 body.dark-theme {
   .project-card {
     background: $foreground-color--dark;
+    &:hover {
+      background: lighten($color: $background-color--dark, $amount: 18);
+      border-color: white;
+    }
   }
 }

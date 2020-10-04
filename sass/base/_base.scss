@@ -7,6 +7,7 @@
 @import '../mixins/_grow';
 
 // components
+@import '../components/grid';
 @import '../components/_nav';
 @import '../components/_button';
 @import '../components/_image';
@@ -129,6 +130,7 @@ p {
 
 .special {
   color: $link-color;
+  cursor: pointer;
 }
 
 .projects {
@@ -171,5 +173,8 @@ body.dark-theme {
     &.divide {
       background: $foreground-color--dark;
     }
+  }
+  .special {
+    color: $link-color--dark;
   }
 }

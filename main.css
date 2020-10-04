@@ -53,6 +53,18 @@ body.dark-theme .dark {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .col {
+    float: left;
+    width: 50%;
+  }
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -305,6 +317,7 @@ body.dark-theme .image {
 }
 
 .tooltip .tooltip-contents {
+  display: none;
   white-space: nowrap;
   text-align: center;
   padding: 5px 0;
@@ -313,7 +326,7 @@ body.dark-theme .image {
   position: absolute;
   z-index: 1;
   bottom: 200%;
-  left: 20%;
+  left: -104%;
 }
 
 .tooltip .tooltip-contents::after {
@@ -327,6 +340,12 @@ body.dark-theme .image {
   border-color: #0084C2 transparent transparent transparent;
 }
 
+@media (min-width: 1024px) {
+  .tooltip .tooltip-contents {
+    display: block;
+  }
+}
+
 .tooltip .bounce {
   animation: bounce 2s infinite;
 }
@@ -336,7 +355,7 @@ body.dark-theme .image {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 
@@ -480,15 +499,11 @@ body.dark-theme .image {
 
 @media (min-width: 768px) {
   .project-card {
-    transition: transform .4s ease-in-out;
-    width: 560px;
+    width: 480px;
     height: 200px;
-    margin: 0 auto 2.5em;
+    margin: 0 0.5rem 2.5em;
     text-align: left;
     display: block;
-  }
-  .project-card:hover {
-    transform: scale(1.1);
   }
   .project-card h3 {
     margin-top: 0;
@@ -499,7 +514,7 @@ body.dark-theme .image {
     max-height: 150px;
   }
   .project-card .avatar {
-    width: 200px;
+    width: 180px;
     top: 1.5em;
   }
   .project-card .avatar.screenshot {
@@ -518,10 +533,19 @@ body.dark-theme .image {
     padding-left: 1em;
     width: calc(100% - 2em);
   }
+  .project-card:hover {
+    background: #e6e6e6;
+    border-color: black;
+  }
 }
 
 body.dark-theme .project-card {
   background: #333333;
+}
+
+body.dark-theme .project-card:hover {
+  background: #484848;
+  border-color: white;
 }
 
 .call-to-action {
@@ -737,6 +761,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
 }
 
 .tooltip .tooltip-contents {
+  display: none;
   white-space: nowrap;
   text-align: center;
   padding: 5px 0;
@@ -745,7 +770,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
   position: absolute;
   z-index: 1;
   bottom: 200%;
-  left: 20%;
+  left: -104%;
 }
 
 .tooltip .tooltip-contents::after {
@@ -759,6 +784,12 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
   border-color: #0084C2 transparent transparent transparent;
 }
 
+@media (min-width: 1024px) {
+  .tooltip .tooltip-contents {
+    display: block;
+  }
+}
+
 .tooltip .bounce {
   animation: bounce 2s infinite;
 }
@@ -768,7 +799,7 @@ body.dark-theme .button:hover, body.dark-theme nav ul li a:hover, nav ul li body
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 
@@ -953,6 +984,7 @@ p a {
 
 .special {
   color: #0084C2;
+  cursor: pointer;
 }
 
 .projects {
@@ -998,4 +1030,8 @@ body.dark-theme a:hover {
 
 body.dark-theme section.divide {
   background: #333333;
+}
+
+body.dark-theme .special {
+  color: #fd2965;
 }

@@ -1,0 +1,12 @@
+@include screen($laptop) {
+  .col {
+    float: left;
+    width: 50%;
+  }
+  
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

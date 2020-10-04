@@ -1,6 +1,7 @@
 .tooltip {
   position: relative;
   .tooltip-contents {
+    display: none;
     white-space: nowrap;
     text-align: center;
     padding: 5px 0;
@@ -9,7 +10,7 @@
     position: absolute;
     z-index: 1;
     bottom: 200%;
-    left: 20%;
+    left: -104%;
     // arrow
     &::after{
       content: '';
@@ -21,6 +22,9 @@
       border-style: solid;
       border-color: $link-color transparent transparent transparent;
     }
+    @include screen($laptop) {
+      display: block;
+    }
   }
 
   // special effects
@@ -29,6 +33,6 @@
   }
   @keyframes bounce {
    0%, 100% {transform: translateY(0);}
-   50% {transform: translateY(-20px);}
+   50% {transform: translateY(-10px);}
   }
 }
