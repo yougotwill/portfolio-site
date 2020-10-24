@@ -45,6 +45,10 @@ Social Media Icons:
 - [Iconmonstr](https://iconmonstr.com/)
 - [Svgrepo](https://www.svgrepo.com/)
 
+Skills Icons:
+
+- [Shields.io](https://shields.io/)
+
 Stopping the nav and footer bouncing when scrolling
 
 - https://www.smashingmagazine.com/2018/08/scroll-bouncing-websites/

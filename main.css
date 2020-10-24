@@ -54,11 +54,27 @@ body.dark-theme .dark {
 }
 
 @media (min-width: 1024px) {
-  .col {
+  .col-2 {
     float: left;
     width: 50%;
   }
+  .col-4 {
+    float: left;
+    width: 25%;
+  }
   .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  .is-tablet .col-4 {
+    float: left;
+    width: 25%;
+  }
+  .is-tablet.row:after {
     content: '';
     display: table;
     clear: both;
@@ -428,13 +444,28 @@ body.dark-theme .image {
   margin: 0;
 }
 
-.about-box .skills {
+.about-box .skills .skill {
+  border: 1px solid #999999;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  padding: 0.75rem 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 250px;
   text-align: center;
-  list-style: none;
 }
 
-.about-box .skills li {
-  padding: .5em 0;
+.about-box .skills .skill img {
+  vertical-align: middle;
+}
+
+.about-box .skills .skill span {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.about-box .skills .skill:hover {
+  background: #e6e6e6;
+  border-color: black;
 }
 
 @media (min-width: 768px) {
@@ -443,14 +474,14 @@ body.dark-theme .image {
     text-align: left;
     font-size: 1.1em;
   }
-  .about-box .skills {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    list-style: inside;
-    padding-right: 6em;
-    padding-bottom: 2em;
+  .about-box .skills .skill {
+    margin: 0 0.5rem 2.5em;
   }
+}
+
+body.dark-theme .about-box .skills .skill:hover {
+  background: #484848;
+  border-color: white;
 }
 
 .project-card {

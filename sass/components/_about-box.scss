@@ -22,10 +22,25 @@
     }
   }
   .skills {
-    text-align: center;
-    list-style: none;
-    li {
-      padding: .5em 0;
+    .skill {
+      border: 1px solid $nav-color;
+      border-radius: 6px;
+      font-size: 1.5rem;
+      padding: 0.75rem 0.5rem;
+      margin-bottom: 1.5rem;
+      max-width: 250px;
+      text-align: center;
+      img {
+        vertical-align: middle;
+      }
+      span {
+        display: block;
+        margin-bottom: 12px;
+      }
+      &:hover {
+        background: darken($color: $background-color, $amount: 10);
+        border-color: black;
+      }
     }
   }
   @include screen($tablet) {
@@ -33,13 +48,22 @@
     text-align: left;
     font-size: 1.1em;
     .skills {
-      display: inline-block;
-      vertical-align: top;
-      text-align: left;
-      list-style: inside;
-      padding-right: 6em;
-      padding-bottom: 2em;
+      .skill {
+        margin: 0 0.5rem 2.5em;
+      }
     }
   }
 }
 
+body.dark-theme {
+  .about-box {
+    .skills {
+      .skill {
+        &:hover {
+          background: lighten($color: $background-color--dark, $amount: 18);
+          border-color: white;
+        }
+      }
+    }
+  }
+}
