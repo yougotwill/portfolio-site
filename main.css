@@ -54,11 +54,27 @@ body.dark-theme .dark {
 }
 
 @media (min-width: 1024px) {
-  .col {
+  .col-2 {
     float: left;
     width: 50%;
   }
+  .col-4 {
+    float: left;
+    width: 25%;
+  }
   .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  .is-tablet .col-4 {
+    float: left;
+    width: 36%;
+  }
+  .is-tablet.row:after {
     content: '';
     display: table;
     clear: both;
@@ -401,9 +417,13 @@ body.dark-theme .image {
 }
 
 .about-box {
-  margin: 0 auto 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-left: 2em;
   padding-right: 2em;
+  padding-bottom: 2em;
 }
 
 .about-box h2 {
@@ -414,43 +434,66 @@ body.dark-theme .image {
   margin: .25em auto .5em;
 }
 
-.about-box .info .heading {
-  margin-top: 1em;
+.about-box .heading {
   margin-bottom: 0.5em;
 }
 
-.about-box .info .special {
+.about-box .special {
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
-.about-box .info .special + p {
+.about-box .special + p {
   margin: 0;
 }
 
-.about-box .skills {
+.about-box .info .skills .skill {
+  border: 1px solid #999999;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  list-style: none;
 }
 
-.about-box .skills li {
-  padding: .5em 0;
+.about-box .info .skills .skill img {
+  vertical-align: middle;
+}
+
+.about-box .info .skills .skill span {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.about-box .info .skills .skill:hover {
+  background: #e6e6e6;
+  border-color: black;
 }
 
 @media (min-width: 768px) {
   .about-box {
     max-width: 700px;
-    text-align: left;
-    font-size: 1.1em;
+    margin: 0 auto;
   }
-  .about-box .skills {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    list-style: inside;
-    padding-right: 6em;
-    padding-bottom: 2em;
+  .about-box .biography {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
+  .about-box .skills .skill {
+    margin: 0 1rem 2.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-box .biography {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+body.dark-theme .about-box .skills .skill:hover {
+  background: #484848;
+  border-color: white;
 }
 
 .project-card {
